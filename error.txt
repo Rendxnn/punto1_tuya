@@ -1,0 +1,32 @@
+Run pytest tests/
+  pytest tests/
+  shell: /usr/bin/bash -e {0}
+  env:
+    pythonLocation: /opt/hostedtoolcache/Python/3.13.5/x64
+    PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.5/x64/lib/pkgconfig
+    Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.5/x64
+    Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.5/x64
+    Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.5/x64
+    LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.5/x64/lib
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-8.4.1, pluggy-1.6.0
+rootdir: /home/runner/work/punto1_tuya/punto1_tuya
+plugins: Faker-37.4.2
+collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+________________ ERROR collecting tests/test_data_processor.py _________________
+ImportError while importing test module '/home/runner/work/punto1_tuya/punto1_tuya/tests/test_data_processor.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_data_processor.py:3: in <module>
+    from src.data_processor import DataProcessor
+E   ModuleNotFoundError: No module named 'src'
+=========================== short test summary info ============================
+ERROR tests/test_data_processor.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.52s ===============================
+Error: Process completed with exit code 2.
