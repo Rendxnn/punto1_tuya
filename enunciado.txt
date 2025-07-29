@@ -1,0 +1,4 @@
+1. Ejercicio Conceptual de Creación de Dataset de Números de Teléfono de Clientes
+Diseñar e implementar un proceso automatizado y controlado mediante prácticas de CI/CD para la creación,
+validación, despliegue y mantenimiento de un dataset confiable de números de teléfono de clientes. Este
+dataset será utilizado para mejorar la comunicación y el servicio al cliente.
